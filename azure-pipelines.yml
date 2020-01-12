@@ -29,10 +29,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'test'
-    testRunTitle: 'Running Test is Completed'
     
 - task: VSTest@2
   inputs:
